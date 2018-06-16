@@ -36,7 +36,9 @@ spring:
     producer:
       group-id: zouItemCopy
       batch-size: 1000
- 
+
+test:
+  login_platform_name: JJ 
 
 mybatis:
   mapperLocations: classpath*:/**/mappers/*mapper.xml  
