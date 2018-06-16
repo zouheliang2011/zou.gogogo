@@ -1,0 +1,15 @@
+
+zou.springboot.gogogo/target/classes/logback.xml
+zou.springboot.gogogo/target/classes/spring/applicationContext.xml
+*.class
+*.jar
+zou.springboot.gogogo/target/zou.springboot.gogogo-1.0.0-SNAPSHOT.jar.original
+zou.springboot.gogogo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+zou.springboot.gogogo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+zou.springboot.gogogo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+zou.springboot.gogogo/target/maven-archiver/pom.properties
+zou.springboot.gogogo/target/classes/META-INF/maven/com.zou/zou.springboot.gogogo/pom.xml
+zou.springboot.gogogo/target/classes/META-INF/maven/com.zou/zou.springboot.gogogo/pom.properties
+zou.springboot.gogogo/target/classes/META-INF/MANIFEST.MF
+zou.springboot.gogogo/target/classes/mappers/zou-mapper.xml
+zou.springboot.gogogo/target/classes/application.yml
