@@ -1,6 +1,5 @@
 package zou.springboot.gogogo.bean;
 
-import java.io.PrintWriter;
 import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.Map;
@@ -8,12 +7,11 @@ import java.util.Map;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 /**
- * 登录配置项
- * @author ruiyun077
+ * 目前没有在yml文件中有，如果有格式和前缀都相同才能读取
  *
  */
 @Component
-@ConfigurationProperties(prefix = "ruiyun")
+@ConfigurationProperties(prefix = "test")
 public class LoginConfiguration {
 //	private static final String TAOBAO_AUTH_PARAM = "{0}?response_type={1}&client_id={2}&redirect_uri={3}&state={4}&view={5}";
 	/**
