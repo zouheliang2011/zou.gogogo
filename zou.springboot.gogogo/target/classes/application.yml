@@ -24,36 +24,18 @@ spring:
         max-wait: -1
         min-idle: 0
   kafka:
-    #bootstrap-servers: 192.168.1.254:9092
+    #bootstrap-servers: 191.168.1.254:9092
     #bootstrap-servers: 127.0.0.1:9092
-    bootstrap-servers: 101.37.30.10:9091
+    bootstrap-servers: 10.37.30.10:9091
     consumer: 
-      group-id: ruiyunKeywords
+      group-id: zouKeywords
     template:
-      default-topic: ruiyun-keywords-task
+      default-topic: zou-keywords-task
     listener:
       concurrency: 3
     producer:
-      group-id: ruiyunItemCopy
+      group-id: zouItemCopy
       batch-size: 1000
-  
-ruiyun:
-  login_platform_name: JD
-  app_id: 2253C69797063D04627C8D499CD3F5A4
-  app_secret: 8151c70adae64a15a43d6aaf4602c122
-  auth_url: https://oauth.jd.com/oauth/authorize
-  token_url: https://oauth.jd.com/oauth/token
-  resp_url: /
-  login_url: /login
-  view: web
-  response_type: code
-  redirect_uri: /auth
-  redirect_result_uri: /auth
-  state: 1234
-  extend_prop: 5
-  grant_type: authorization_code
-  need_filter_url: /itemcopy/task/search,/itemcopy/item-manage/list,/itemcopy/item-select/list/search,/itemcopy/item-select/list/search/pageInfo,/itemcopy/item-select/copyitems,/itemcopy/item-select/itemcategory
- 
  
 
 mybatis:
