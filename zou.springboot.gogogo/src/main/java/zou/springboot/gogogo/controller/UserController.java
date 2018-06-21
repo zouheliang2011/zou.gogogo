@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import zou.springboot.gogogo.bean.UserInfo;
 import zou.springboot.gogogo.bean.XmlPropertyTest;
 import zou.springboot.gogogo.service.SpringApplicationContext;
 import zou.springboot.gogogo.service.UserInfoService;
+import zou.springboot.gogogo.service.UserInfoServiceImpl;
 
 
 @RestController
@@ -59,6 +61,23 @@ public class UserController {
 		catch (Exception e)
 		{
 			System.out.println("error3");
+		}
+//		return keyWordSet.sensitiveWordSearch(req.getNick(), source);
+	}
+	
+	@RequestMapping(value = "/testdatabase", method = RequestMethod.GET)
+	public void testdatabase() {
+		try
+		{
+			UserInfoServiceImpl bean = (UserInfoServiceImpl)SpringApplicationContext.getBean("dataUser");
+			UserInfo findRoleById = bean.findRoleById("b");
+			System.out.println("获取到对应的值"+findRoleById);
+			
+		}
+		catch (Exception e)
+		{
+			System.out.println("error1");
+			e.printStackTrace();
 		}
 //		return keyWordSet.sensitiveWordSearch(req.getNick(), source);
 	}

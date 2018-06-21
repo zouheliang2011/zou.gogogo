@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper  
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"     
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="zou.springboot.gogogo.dao.UserInfoDao">  
+    <cache eviction="LRU" flushInterval="100000"></cache>  
+    
+    <resultMap id="TBL_USERINFO" type="zou.springboot.gogogo.bean.UserInfo" >
+    	<result property="name" column="name" />
+		<result property="address" column="address" />
+		<result property="id" column="id"/>
+     </resultMap>
+    <select id="findRoleById" resultMap="TBL_USERINFO">  
+        <![CDATA[select * from zou where id=#{id}]]>  
+    </select>  
+</mapper>  

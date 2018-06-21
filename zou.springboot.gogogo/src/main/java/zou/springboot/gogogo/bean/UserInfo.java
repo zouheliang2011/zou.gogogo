@@ -1,6 +1,10 @@
 package zou.springboot.gogogo.bean;
 
-public class UserInfo {
+import java.io.Serializable;
+
+import org.apache.commons.lang.builder.ToStringBuilder;
+
+public class UserInfo implements Serializable{
 
 	private String name;
 	private String id;
@@ -35,6 +39,10 @@ public class UserInfo {
 	public void setName( String name )
 	{
 		this.name = name;
+	}
+	public String toString()
+	{
+		return ToStringBuilder.reflectionToString(this);
 	}
 	
 }

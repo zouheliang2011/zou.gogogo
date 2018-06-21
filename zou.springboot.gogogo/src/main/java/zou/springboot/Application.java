@@ -20,12 +20,13 @@ import zou.springboot.gogogo.bean.LoginConfiguration;
 //如果这个不注释那么就会包找不到Consider defining a bean of type 'xxxMapper' in your configuration
 //@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 @EnableConfigurationProperties({LoginConfiguration.class})
-@ImportResource(locations= {"classpath:spring/applicationContext.xml"})
+@ImportResource(locations= {"classpath:spring/*.xml"})
 @MapperScan("zou.springboot.gogogo.mapper")
 public class Application {
 
 	public static void main(String[] args) {  
 
         SpringApplication.run(Application.class);  
+        
     }  
 }
